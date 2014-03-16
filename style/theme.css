@@ -2,10 +2,11 @@
 /* Icons */
 
 .icon {
-  padding: 0 20px 30px;
+  /*padding: 0 20px 30px;*/
+  width: 70px;
   text-align:center;
   flex: auto;
-  color: white;
+  color: #FFCCA9;
 }
 
 .icon > label {
@@ -38,7 +39,7 @@
 
 .icon[manifest-url] { order: 999; }
 .icon[manifest-url] > .character {
-  color: white;
+  color: #FFCCA9;
   var-bgcolor: #00A1CB;
   var-size: 50px;
   font-size: 30px;
@@ -67,8 +68,6 @@
 .icon[manifest-url="app://email.gaiamobile.org/manifest.webapp"] { order: 4; }
 .icon[manifest-url="app://email.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f0e0";
-  var-bgcolor: #F06;
-  color: #F06;
   /*box-shadow: none;
   margin: -1px;
   width: 150px;
@@ -78,7 +77,6 @@
 .icon[manifest-url="app://communications.gaiamobile.org/manifest.webapp"] { order: 0; }
 .icon[manifest-url="app://communications.gaiamobile.org/manifest.webapp"][entry-point="dialer"] > .character {
   var-character: "\f095";
-  color: #0FA;
 }
 .icon[manifest-url="app://communications.gaiamobile.org/manifest.webapp"][entry-point="contacts"] > .character {
   var-character: "\f0c0";
