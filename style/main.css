@@ -19,7 +19,10 @@
   font-style: normal;
 }
 
-* { -moz-box-sizing: border-box; }
+* { 
+  -moz-box-sizing: border-box; 
+  var-main-color: #F1A786;
+}
 
 html, body {
   height: 100%;
@@ -42,7 +45,7 @@ main {
   flex-wrap: wrap;
   align-content: flex-start;
   padding: 0;
-  text-shadow: 0 2px 4px #FFCCA9;
+  text-shadow: 0 2px 4px var(main-color);
 }
 
 .character:before {
@@ -57,14 +60,14 @@ main {
   display: flex;
   align-items: flex-start;
   margin: 20px 20px;
-  color: #FFCCA9;
+  color: var(main-color);
   flex-direction: column;
 }
 
 #time {
   line-height: 100%;
   font-size: 3rem;
-  text-shadow: 0 2px 4px #FFCCA9;
+  text-shadow: 0 2px 4px var(main-color);
   letter-spacing: -1px;  
 }
 
@@ -75,18 +78,18 @@ main {
 
 #date {
   font-size: 1.5rem;
-  text-shadow: 0 2px 4px #FFCCA9;
+  text-shadow: 0 2px 4px var(main-color);
   padding-left: 5px;
 }
 
 #searchfield {
-    background: #000;
+    color: #000;
     border: none;
     width: 90%;
     height: 30px;
-    opacity: 0.3;
+    opacity: 0.5;
     padding-left: 10px;
-    color: #FFCCA9;
+    background: var(main-color);
     font-size: 1em;
     font-family: 'Neuropol';
     margin: 5px 0 0 20px;

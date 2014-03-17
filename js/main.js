@@ -7,6 +7,8 @@ function populate() {
     let apps = event.target.result;
     let fragment = document.createDocumentFragment();
     for (let app of apps) {
+      console.log(app);
+      console.log(app.manifest);
       if (HIDDEN_ROLES.indexOf(app.manifest.role) > -1)
         continue
       if (app.manifest.entry_points) {

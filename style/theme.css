@@ -6,7 +6,7 @@
   width: 70px;
   text-align:center;
   flex: auto;
-  color: #FFCCA9;
+  color: var(main-color);
 }
 
 .icon > label {
@@ -39,7 +39,7 @@
 
 .icon[manifest-url] { order: 999; }
 .icon[manifest-url] > .character {
-  color: #FFCCA9;
+  color: var(main-color);
   var-bgcolor: #00A1CB;
   var-size: 50px;
   font-size: 30px;
@@ -59,13 +59,13 @@
   -x-color: #01A4A4;
 }
 
-.icon[manifest-url="app://calendar.gaiamobile.org/manifest.webapp"] { order: 3; }
+.icon[manifest-url="app://calendar.gaiamobile.org/manifest.webapp"] { order: 10; }
 .icon[manifest-url="app://calendar.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f133";
   var-bgcolor: #FF0066;
 }
 
-.icon[manifest-url="app://email.gaiamobile.org/manifest.webapp"] { order: 4; }
+.icon[manifest-url="app://email.gaiamobile.org/manifest.webapp"] { order: 10; }
 .icon[manifest-url="app://email.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f0e0";
   /*box-shadow: none;
@@ -74,7 +74,7 @@
   border: 1px dashed white;*/
 }
 
-.icon[manifest-url="app://communications.gaiamobile.org/manifest.webapp"] { order: 0; }
+.icon[manifest-url="app://communications.gaiamobile.org/manifest.webapp"][entry-point="dialer"] { order: 0; }
 .icon[manifest-url="app://communications.gaiamobile.org/manifest.webapp"][entry-point="dialer"] > .character {
   var-character: "\f095";
 }
@@ -99,7 +99,7 @@ entry-point="contacts" manifest-url="app://communications.gaiamobile.org/manifes
   var-bgcolor: #113F8C;
 }
 
-.icon[manifest-url="app://music.gaiamobile.org/manifest.webapp"] { order: 7; }
+.icon[manifest-url="app://music.gaiamobile.org/manifest.webapp"] { order: 1; }
 .icon[manifest-url="app://music.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f001";
   var-bgcolor: #E54028;
@@ -107,7 +107,7 @@ entry-point="contacts" manifest-url="app://communications.gaiamobile.org/manifes
 
 
 
-.icon[manifest-url="app://camera.gaiamobile.org/manifest.webapp"] { order: 9; }
+.icon[manifest-url="app://camera.gaiamobile.org/manifest.webapp"] { order: 2; }
 .icon[manifest-url="app://camera.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f083";
   var-bgcolor: #E54028;
@@ -119,7 +119,7 @@ entry-point="contacts" manifest-url="app://communications.gaiamobile.org/manifes
   var-bgcolor: #D0D102;
 }
 
-.icon[manifest-url="app://sms.gaiamobile.org/manifest.webapp"] { order: 11; }
+.icon[manifest-url="app://sms.gaiamobile.org/manifest.webapp"] { order: 1; }
 .icon[manifest-url="app://sms.gaiamobile.org/manifest.webapp"] > .character {
   var-character: "\f086";
   var-bgcolor: #D70060;
@@ -153,5 +153,35 @@ entry-point="contacts" manifest-url="app://communications.gaiamobile.org/manifes
 .icon[manifest-url="https://marketplace.allizom.org/manifest.webapp"] { order: 100; }
 .icon[manifest-url="https://marketplace.allizom.org/manifest.webapp"] > .character {
   var-character: "\f07a";
+  var-bgcolor: #F18D05;
+}
+
+.icon[manifest-url="https://m.facebook.com/openwebapp/manifest.webapp"] { order: 2; }
+.icon[manifest-url="https://m.facebook.com/openwebapp/manifest.webapp"] > .character {
+  var-character: "\f09a";
+  var-bgcolor: #F18D05;
+}
+
+.icon[manifest-url*="https://marketplace.firefox.com/app/7b41976f-cb97-4b90-a711-a71376d21d42/manifest.webapp"] { order: 4; }
+.icon[manifest-url*="https://marketplace.firefox.com/app/7b41976f-cb97-4b90-a711-a71376d21d42/manifest.webapp"] > .character {
+  var-character: "\f135";
+  var-bgcolor: #F18D05;
+}
+
+.icon[manifest-url*="https://marketplace.firefox.com/app/86357900-2697-41b4-bc6a-5685a7799bc2/manifest.webapp"] { order: 2; }
+.icon[manifest-url*="https://marketplace.firefox.com/app/86357900-2697-41b4-bc6a-5685a7799bc2/manifest.webapp"] > .character {
+  var-character: "\f02d";
+  var-bgcolor: #F18D05;
+}
+
+.icon[manifest-url*="https://marketplace.firefox.com/app/6c9a06a4-f9d2-4a2d-95ca-692ba9306932/manifest.webapp"] { order: 2; }
+.icon[manifest-url*="https://marketplace.firefox.com/app/6c9a06a4-f9d2-4a2d-95ca-692ba9306932/manifest.webapp"] > .character {
+  var-character: "\f0d2";
+  var-bgcolor: #F18D05;
+}
+
+.icon[manifest-url*="https://marketplace.firefox.com/app/f5ae765e-6262-463f-b105-e38d3e26c50f/manifest.webapp"] { order: 3; }
+.icon[manifest-url*="https://marketplace.firefox.com/app/f5ae765e-6262-463f-b105-e38d3e26c50f/manifest.webapp"] > .character {
+  var-character: "\f180";
   var-bgcolor: #F18D05;
 }
