@@ -8,7 +8,7 @@ Based on https://github.com/paulrouget/riverscreen
 This is more a test than anything else, so don't ask me for features or anything, okay?
 Just fork and adapt, it is not hard. There is no real bookmark support, the bookmarks 
 are added manually in js/bookmarks.js. Adapt to your own. The icons are made with 
-awesome font, onhttp://fontawesome.io/ you can see which unicode character to use 
+awesome font, on http://fontawesome.io/ you can see which unicode character to use 
 in style/theme.css.
 
 Here is what it looks like:
