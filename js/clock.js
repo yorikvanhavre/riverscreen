@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", function() {
   clock.init();
 }, true);
 
-const MONTHS_STR = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+const MONTHS_STR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "décembre"];
 
 let clock = {
   init: function() {

@@ -1,19 +1,25 @@
-const HIDDEN_ROLES = ['system', 'input', 'homescreen'];
+const HIDDEN_ROLES = ['system', 'input', 'homescreen', 'search'];
 
 function populate() {
   let icons = document.querySelector("#icons");
   let appMgr = navigator.mozApps.mgmt;
   appMgr.getAll().onsuccess = function(event) {
     let apps = event.target.result;
+    if (bookmarks) {
+      apps = apps.concat(bookmarks)
+    }
+    console.log(apps);
     let fragment = document.createDocumentFragment();
     for (let app of apps) {
-      console.log(app);
-      console.log(app.manifest);
-      if (HIDDEN_ROLES.indexOf(app.manifest.role) > -1)
-        continue
-      if (app.manifest.entry_points) {
-        for (let k in app.manifest.entry_points) {
-          fragment.appendChild(createIcon(app, k));
+      if (app.manifest) {
+        if (HIDDEN_ROLES.indexOf(app.manifest.role) > -1)
+          continue
+        if (app.manifest.entry_points) {
+          for (let k in app.manifest.entry_points) {
+            fragment.appendChild(createIcon(app, k));
+          }
+        } else {
+          fragment.appendChild(createIcon(app));
         }
       } else {
         fragment.appendChild(createIcon(app));
@@ -33,11 +39,17 @@ function createIcon(app, entryKey) {
   if (entryKey) {
     name = app.manifest.entry_points[entryKey].name;
     div.setAttribute("entry-point", entryKey);
-  } else {
+  } else if (app.manifest) {
     name = app.manifest.name;
+  } else {
+    name = app.name;
   }
 
-  div.setAttribute("manifest-url", app.manifestURL);
+  if (app.manifestURL) {
+    div.setAttribute("manifest-url", app.manifestURL);
+  } else {
+    div.setAttribute("manifest-url", app.url);
+  }
 
   let character = document.createElement("span");
   character.className = "character";

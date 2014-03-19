@@ -44,6 +44,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
   padding: 0;
   text-shadow: 0 2px 4px var(main-color);
 }
