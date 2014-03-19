@@ -1,12 +1,12 @@
 {
-  "name": "riverscreen",
+  "name": "MARSScreen",
   "description": "Gaia Alternative Homescreen",
   "launch_path": "/index.html#root",
   "type": "certified",
   "role": "homescreen",
   "developer": {
-    "name": "Paul Rouget",
-    "url": "https://github.com/paulrouget/riverscreen"
+    "name": "Yorik van Havre",
+    "url": "https://yorik.uncreated.net"
   },
   "permissions": {
     "mobileconnection": {},
@@ -23,13 +23,14 @@
   },
   "locales": {
     "en-US": {
-      "name": "Homescreen",
-      "description": "Gaia Homescreen"
+      "name": "MARSScreen",
+      "description": "Gaia Alternative Homescreen"
     }
   },
   "default_locale": "en-US",
   "icons": {
-    "30": "/style/icons/HomeScreen.png"
+    "30": "/style/icons/MARSScreen30.png",
+    "128":"/style/icons/MARSScreen128.png"
   },
   "orientation": "landscape,portrait"
 }

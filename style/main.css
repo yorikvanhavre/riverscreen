@@ -21,8 +21,9 @@
 
 * { 
   -moz-box-sizing: border-box; 
-  var-main-color: #F1A786;
+  var-main-color: rgba(255, 157, 103, 1);
 }
+
 
 html, body {
   height: 100%;
