@@ -1,5 +1,5 @@
 
-/* Icons */
+/* Icons styling */
 
 .icon {
   /*padding: 0 20px 30px;*/
@@ -178,4 +178,9 @@ entry-point="contacts" manifest-url="app://communications.gaiamobile.org/manifes
 .icon[manifest-url*="https://marketplace.firefox.com/app/2bbbe30d-a05f-4e6e-ba95-a5decc9ba26e/manifest.webapp"] { order: 3; }
 .icon[manifest-url*="https://marketplace.firefox.com/app/2bbbe30d-a05f-4e6e-ba95-a5decc9ba26e/manifest.webapp"] > .character {
   var-character: "\f15b";
+}
+
+.icon[manifest-url*="https://marketplace.firefox.com/app/fa85e65f-14ac-4736-89da-7fc27ac8862c/manifest.webapp"] { order: 3; }
+.icon[manifest-url*="https://marketplace.firefox.com/app/fa85e65f-14ac-4736-89da-7fc27ac8862c/manifest.webapp"] > .character {
+  var-character: "\f044";
 }

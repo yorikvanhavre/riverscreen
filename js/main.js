@@ -5,10 +5,10 @@ function populate() {
   let appMgr = navigator.mozApps.mgmt;
   appMgr.getAll().onsuccess = function(event) {
     let apps = event.target.result;
-    if (bookmarks) {
-      apps = apps.concat(bookmarks)
+    if (bookobjs) {
+      apps = apps.concat(bookobjs)
     }
-    console.log(apps);
+    //console.log(apps);
     let fragment = document.createDocumentFragment();
     for (let app of apps) {
       if (app.manifest) {

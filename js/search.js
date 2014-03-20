@@ -10,8 +10,7 @@ if (searchform) {
       searchterm = searchterm.replace(/s/g,"%20");
       searchurl = "https://duckduckgo.com/?q="+searchterm 
       console.log("search form submitted:"+searchurl);
-      //new MozActivity({ name: "view", data: { type: "url", url: searchurl} });
-      window.open(searchurl, '_blank');
+      window.open(searchurl, '_blank','menubar=no,location=no,resizable=yes,scrollbars=yes,status=no');
     }
     return false;
   };

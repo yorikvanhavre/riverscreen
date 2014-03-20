@@ -39,22 +39,6 @@ main {
   flex-direction: column;
 }
 
-#icons {
-  width: 100%;
-  flex: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 0;
-  text-shadow: 0 2px 4px var(main-color);
-}
-
-.character:before {
-  content: var(character);
-}
-
 /* Clock */
 
 #clock {
@@ -96,4 +80,22 @@ main {
     font-size: 1em;
     font-family: 'Neuropol';
     margin: 5px 0 0 20px;
+}
+
+/* Icons */
+
+#icons {
+  width: 100%;
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+  text-shadow: 0 2px 4px var(main-color);
+}
+
+.character:before {
+  content: var(character);
 }
